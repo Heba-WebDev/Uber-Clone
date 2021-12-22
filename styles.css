@@ -224,7 +224,53 @@ select {
 
 .mobile-menu {
     display: block;
+    position: relative;
 }
+
+.mobile-drop-dwon-menu {
+    position: absolute;
+    color: black;
+    right: -145%;
+    top: 225%;
+    background-color: white;
+    height: 92vh;
+    width: 100vw;
+    font-size: 1.6rem;
+    z-index: 1;
+}
+
+
+.mobile-nav-list {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 3rem;
+    
+}
+
+.mobile-nav-list > * {
+    padding: 1.3rem 0;
+}
+
+.mobile-products {
+    background-color: rgb(221, 221, 221);
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.2rem;
+    font-size: 0.8rem;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.mobile-languge  {
+    margin: 0 auto;
+    padding: 3rem 0rem;
+    width: 88%;
+    font-size: 0.9rem;
+}
+.company-drop-list {
+    display: none;
+}
+
 
 @media (min-width: 50rem) {
 .company,
@@ -236,7 +282,74 @@ select {
 .log-in-title {
     display: flex;
 }
+
+
+.company {
+    position: relative;
+}
+
+.company-drop-list {
+    display: block;
+    position: absolute;
+    left: 0;
+    top:calc(100% + .55rem);
+    z-index: 1;
+    color: black;
+    background-color: white;
+    border-radius: .25rem;
+    list-style: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 0.7rem 1rem;
+    text-align: left;
+    width: 22vh;
+}
+
+.company-drop-list > * {
+    width: 100%;
+    font-size: 0.8rem;
+    color: grey;
+    padding-inline: 1rem;
+    padding-bottom: 0.7rem;
+}
 .mobile-menu {
     display: none;
 }
+}
+
+
+.warning {
+    background-color: hsl(224, 88%, 97%);
+    padding: 1.2rem;
+}
+
+.warning > * {
+    padding: 0.6rem 0;
+}
+.warning-title {
+    color: hsl(219, 72%, 42%);
+    justify-content: space-between;
+}
+
+.fa-times {
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+
+.warning-p  {
+    color: hsl(219, 72%, 42%);
+    width: 85%;
+}
+
+
+.warning-links > a {
+    color: hsl(219, 72%, 42%);
+}
+
+
+
+@media (min-width: 45rem) {
+    .warning {
+        padding: 1rem 5rem;
+    }
 }

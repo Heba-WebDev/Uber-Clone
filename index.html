@@ -25,7 +25,17 @@
         <div class="logo"><img alt="logo" src="/Uber-Clone/logo.png"></div>
         <div class="company flex">
             <div class="companty-title">Copmany</div>
-            <div class="company-drop-list-icon fas fa-chevron-down"></div>
+            <div class="company-drop-list-icon fas fa-chevron-down" id="company-icon"></div>
+            <ul class="company-drop-list" data-drop = 'false';>
+                <li>About us</li>
+                <li>Our Offerings</li>
+                <li>How Uber works</li>
+                <li>Global citizenship</li>
+                <li>Newsroom</li>
+                <li>Investor relations</li>
+                <li>Blog</li>
+                <li>Careers</li>
+            </ul>
         </div>
         <div class="safety">Safety</div>
         <div class="help">Help</div>
@@ -50,9 +60,49 @@
         <div class="sign-up">
           <button class="sign-up-btn">Sign up</button>
         </div>
-        <div class="mobile-menu fas fa-bars"></i></div>
+        <div class="mobile-menu fas fa-bars" id="mobile-menu" data-mobileDrop = 'false'></i>
+        <div class="mobile-drop-dwon-menu">
+            <ul class="mobile-nav-list">
+                <li>Company</li>
+                <li>Safety</li>
+                <li>Help</li>
+                <li>COVID-19 resources</li>
+            </ul>
+            <div class="mobile-products flex">
+                <div class="mobile-proudcuts-icon fas fa-th"></div>
+                <div class="mobile-prodcuts-title">Products</div>
+            </div>
+            <div class="mobile-languge flex">
+                <div class="mobile-lang-icon fas fa-globe"></div>
+            <div class="mobile-lang">EN</div>
+            </div>
+        </div>
+        </div>
+
+        
     </div>
 </nav>
+
+<!--The warning that will show to the user as her enters the page-->
+<aside class="warning">
+
+<div class="warning-title flex fs-400">
+    <p>Helping to keeo each other Safe</p>
+    <p class="fa fa-times"></p>
+</div>    
+<div class="warning-p fs-200">
+    <p>We're actively monitoring the COVID-19 situation and are continually working to 
+        help keep those who rely on our platform healthy and safe.</p>
+</div>
+
+<div class="warning-links">
+    <a href="#">Go to Uber's COVID-19 hub</a><br>
+</div>
+
+<div class="warning-links">
+    <a href="#">Read about our Door-to-Door Safety Standard</a>
+</div>
+</aside>
 
 </header>
 
