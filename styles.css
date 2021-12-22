@@ -1,0 +1,242 @@
+/*Fonts*/
+
+ /*Bellefair*/
+ @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+ /*Barlow*/
+ @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+ 
+ /*Barlow Condensed*/
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+ 
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
+ 
+ :root {
+     /* colors */
+ 
+     /* font-sizes */
+     --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+     --fs-800: 3.5rem;
+     --fs-700: 1.5rem;
+     --fs-600: 1rem;
+     --fs-500: 1rem;
+     --fs-400: 0.9375rem;
+     --fs-300: 1rem;
+     --fs-200: 0.875rem;
+     
+     /* font-families */
+     --ff-serif: "Bellefair", serif;
+     --ff-sans-cond: "Barlow Condensed", sans-serif;
+     --ff-sans-normal: "Barlow", sans-serif;
+ }
+ 
+ @media (min-width: 35em) {
+     :root {
+         --fs-800: 5rem;
+         --fs-700: 2.5rem;
+         --fs-600: 1.5rem;
+         --fs-500: 1.25rem;
+         --fs-400: 1rem;
+     }
+ }
+ 
+ @media (min-width: 45em) {
+     :root {
+         /* font-sizes */
+         --fs-800: 6.25rem;
+         --fs-700: 3.5rem;
+         --fs-600: 2rem;
+         --fs-500: 1.75rem;
+         --fs-400: 1.125rem;
+     }
+ }
+
+
+ /* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: grid;
+}
+
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.d-block {
+    display: block;
+}
+
+/* typography */
+
+.ff-serif { font-family: var(--ff-serif); } 
+.ff-sans-cond { font-family: var(--ff-sans-cond); } 
+.ff-sans-normal { font-family: var(--ff-sans-normal); } 
+
+.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; } 
+
+.uppercase { text-transform: uppercase; }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+
+.navbar {
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 45rem) {
+    .navbar {
+        padding: 0.2rem 1.8rem;
+    }
+}
+
+
+.logo img {
+    width: 100%;
+}
+
+/*Both sides on the navbar would be centered vertically*/
+
+.logo-side > * {
+ align-self: center;
+}
+
+.long-in-side > * {
+    align-self: center;
+   }
+   
+/*Closing the gap between the elements in the navar that have icons next to them*/
+/*Due to the original gap being 1rem in the flex utility class*/
+
+.company, .langauge, .products, .log-in {
+    gap: 0.6rem;
+}   
+
+
+
+/*Elemtns that have an icon next to them would both be on the same line*/
+.company > *,
+.langauge > *,
+.products > *,
+.log-in > * {
+    align-self: center;
+}
+
+.sign-up-btn {
+    padding: 0.3rem 1rem;
+    border-radius: 15px;
+    border: 0;
+    background-color: white;
+    font-weight: var(--fs-600);
+}
+
+
+/*Hide some navbar elements in smaller screens*/
+
+.company,
+.safety,
+.help,
+.covid,
+.langauge,
+.products,
+.log-in-title {
+    display: none;
+}
+
+.mobile-menu {
+    display: block;
+}
+
+@media (min-width: 50rem) {
+.company,
+.safety,
+.help,
+.covid,
+.langauge,
+.products,
+.log-in-title {
+    display: flex;
+}
+.mobile-menu {
+    display: none;
+}
+}
