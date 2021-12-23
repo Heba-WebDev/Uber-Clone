@@ -35,6 +35,29 @@ function showDropDownMenu() {
 
 let mobileHamburgerMenu = document.querySelector('.mobile-menu');
 
+//Changing the media query through JS
+
+// 1. Create a condition that targets viewports at least 768px wide
+
+const mediaQuery = window.matchMedia('(max-width: 45rem)')
+
+function handleTabletChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    // Show the hamburger menu
+    mobileHamburgerMenu.style.display = '';
+  } else //Hide the hamburger menu {
+    mobileHamburgerMenu.style.display = 'none';
+  }
+
+
+// Register event listener
+mediaQuery.addListener(handleTabletChange);
+
+// Initial check
+handleTabletChange(mediaQuery);
+
+
 //The mobile hamburger drop-down menu
 
 let mobileHamburgerDropDown = document.querySelector('.mobile-drop-dwon-menu');
@@ -69,7 +92,7 @@ function showMobileDropDownMenu() {
 
 //The warning message that shows when the user enters the website
 
-let warningMessage = document.querySelector('.warning')
+let warningMessage = document.querySelector('.warning');
 
 //The close button of the warning message
 
@@ -78,5 +101,42 @@ let warningMessageCloseBtn = document.querySelector('.fa-times');
 warningMessageCloseBtn.addEventListener('click', closeTheWarningMessage);
 
 function closeTheWarningMessage() {
-    warningMessage.style.display = 'none';
+    warningMessage.remove();
+}
+
+
+
+//The drive, eat and ride taps
+
+let drive = document.querySelector('.drive');
+
+let eat = document.querySelector('.eat');
+
+let ride = document.querySelector('.ride');
+
+//When clicked on each section, it will have a black bottom border under it's tap
+
+
+drive.addEventListener('click', highlightDrive);
+
+function highlightDrive() {
+    drive.style.borderBottom = '5px solid black';
+    eat.style.borderBottom = '0';
+    ride.style.borderBottom = '0';
+}
+
+eat.addEventListener('click', highlightEat);
+
+function highlightEat() {
+    drive.style.borderBottom = '0';
+    eat.style.borderBottom = '5px solid black';
+    ride.style.borderBottom = '0';
+}
+
+ride.addEventListener('click', highlightRide);
+
+function highlightRide() {
+    drive.style.borderBottom = '0';
+    eat.style.borderBottom = '0';
+    ride.style.borderBottom = '5px solid black';
 }
