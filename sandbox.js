@@ -39,7 +39,8 @@ let mobileHamburgerMenu = document.querySelector('.mobile-menu');
 
 // 1. Create a condition that targets viewports at least 768px wide
 
-const mediaQuery = window.matchMedia('(max-width: 45rem)')
+const mediaQuery = window.matchMedia('(max-width: 50rem)');
+const mediaQueryWarapper = window.matchMedia('(min-width: 50rem)');
 
 function handleTabletChange(e) {
   // Check if the media query is true
@@ -51,6 +52,7 @@ function handleTabletChange(e) {
   }
 
 
+  
 // Register event listener
 mediaQuery.addListener(handleTabletChange);
 
@@ -105,6 +107,16 @@ function closeTheWarningMessage() {
 }
 
 
+function WrapperChangeBG(e) {
+    // Check if the media query is true
+    if (e.matches) {
+      // Show the hamburger menu
+     console.log('check')
+    } else //Hide the hamburger menu {
+      console.log('not checked')
+    }
+    mediaQueryWarapper.addListener(WrapperChangeBG);
+    WrapperChangeBG(mediaQueryWarapper);
 
 //The drive, eat and ride taps
 
@@ -114,7 +126,27 @@ let eat = document.querySelector('.eat');
 
 let ride = document.querySelector('.ride');
 
+//The drive, eat and ride sections
+
+let driveSection = document.querySelector('.drive-section');
+
+let eatSection = document.querySelector('.eat-section');
+
+let rideSection = document.querySelector('.ride-section');
+
+eatSection.style.display = 'none';
+rideSection.style.display = 'none';
+document.querySelector('.eat-image').style.display = 'none';
+document.querySelector('.ride-image').style.display = 'none';
+
+//The background image of the wrapper in bigger screen
+
+let wrapperBackgroundPic = document.querySelector('.drive-eat-ride-wrapper');
+
+
 //When clicked on each section, it will have a black bottom border under it's tap
+//And the section corresponding to the tap will show
+//the background image changes in the bigger screen
 
 
 drive.addEventListener('click', highlightDrive);
@@ -123,6 +155,19 @@ function highlightDrive() {
     drive.style.borderBottom = '5px solid black';
     eat.style.borderBottom = '0';
     ride.style.borderBottom = '0';
+    driveSection.style.display = '';
+    eatSection.style.display = 'none';
+    rideSection.style.display = 'none';
+    document.querySelector('.drive-image').style.display = '';
+    document.querySelector('.eat-image').style.display = 'none';
+    document.querySelector('.ride-image').style.display = 'none';
+    if(window.innerWidth > 800) {
+        wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/drive-desktop.jpeg)';
+    }else {
+        wrapperBackgroundPic.style.backgroundImage = '';
+        wrapperBackgroundPic.style.backgroundColor = 'white';
+    }
+    
 }
 
 eat.addEventListener('click', highlightEat);
@@ -131,6 +176,19 @@ function highlightEat() {
     drive.style.borderBottom = '0';
     eat.style.borderBottom = '5px solid black';
     ride.style.borderBottom = '0';
+    driveSection.style.display = 'none';
+    eatSection.style.display = '';
+    rideSection.style.display = 'none';
+    document.querySelector('.drive-image').style.display = 'none';
+    document.querySelector('.eat-image').style.display = '';
+    document.querySelector('.ride-image').style.display = 'none';
+    if(window.innerWidth > 800) {
+        wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/eat-desktop.jpeg)';
+    } else {
+        wrapperBackgroundPic.style.backgroundImage = '';
+        wrapperBackgroundPic.style.backgroundColor = 'white';
+    }
+    
 }
 
 ride.addEventListener('click', highlightRide);
@@ -139,4 +197,19 @@ function highlightRide() {
     drive.style.borderBottom = '0';
     eat.style.borderBottom = '0';
     ride.style.borderBottom = '5px solid black';
+    driveSection.style.display = 'none';
+    eatSection.style.display = 'none';
+    rideSection.style.display = '';
+    document.querySelector('.drive-image').style.display = 'none';
+    document.querySelector('.eat-image').style.display = 'none';
+    document.querySelector('.ride-image').style.display = '';
+  
+    if(window.innerWidth > 800) {
+        wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/ride-desktop.jpeg)';
+    } else {
+        wrapperBackgroundPic.style.backgroundImage = '';
+        wrapperBackgroundPic.style.backgroundColor = 'white';
+    }
 }
+
+

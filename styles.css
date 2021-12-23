@@ -352,6 +352,29 @@ select {
     }
 }
 
+.drive-eat-ride-wrapper {
+    background-image: '';
+}
+
+@media (min-width: 50rem) {
+
+    .drive-eat-ride-wrapper {
+        background: url(/Uber-Clone/drive-desktop.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        padding: 5rem;
+    }
+    
+    .drive-eat-ride-container {
+    max-width: 55%;
+    height: 100%;
+    background-color: white;
+    
+    }
+
+}
 
 
 
@@ -373,20 +396,20 @@ select {
     border-bottom: 5px solid black;
     padding-bottom: 1rem;
 }
-.drive-section {
+.drive-section, .eat-section, .ride-section {
     padding: 1rem 2rem;
 }
 
-.drive-title {
+.drive-title, .eat-title, .ride-title {
     font-size: 1.6rem;
 }
 
-.drive-p {
+.drive-p, .eat-p, .ride-p {
     padding-bottom: 0.7rem;
 }
 
 
-.drive-btn > button {
+.drive-btn > button, .eat-btn > button {
     background-color: black;
     color: white;
     border: 0;
@@ -395,7 +418,7 @@ select {
 }
 
 
-.drive-link > a {
+.drive-link > a, .eat-link > a {
     color: black;
     display: block;
     letter-spacing: 0.8px;
@@ -415,5 +438,42 @@ select {
     }
     .drive-section {
         padding: 1rem 1.3rem;
+    }
+}
+
+
+.pickup, .destination {
+    padding: 1rem;
+    background-color: rgb(246, 246, 246);
+    font-size: 1rem;
+    border: 0;
+}
+
+.ride-btns {
+ gap: 1.3rem;
+ padding-top: 0.7rem;
+}
+
+.ride-request-btn > button{
+    background-color: black;
+    color: white;
+    border: 0;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.ride-schedule-btn > button {
+    background-color: rgb(226, 226, 226);
+    color: black;
+    border: 0;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 50rem) {
+    .drive-eat-ride-mobile-pics {
+        display: none;
     }
 }
