@@ -578,18 +578,18 @@ select {
 
 .about-us-container {
     padding: 1rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
-@media (min-width: 35rem) {
+/* @media (min-width: 35rem) {
     .about-us-container {
         grid-template-columns: repeat(2, 1fr);
     
     }
-}
+} */
 
 @media (min-width: 50rem) {
     .about-us-container {
-        grid-template-columns: repeat(2, 1fr);
         width: 75%;
         margin: 0 auto;
     }
@@ -599,6 +599,14 @@ select {
         width: 90%;
     }
 }
+
+/* @media (min-width: 65rem) {
+    .about-us-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
+
+
 .about-us-container > * {
     padding: 1rem 0;
 }
