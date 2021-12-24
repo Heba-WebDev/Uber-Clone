@@ -581,12 +581,7 @@ select {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
-/* @media (min-width: 35rem) {
-    .about-us-container {
-        grid-template-columns: repeat(2, 1fr);
-    
-    }
-} */
+
 
 @media (min-width: 50rem) {
     .about-us-container {
@@ -600,19 +595,79 @@ select {
     }
 }
 
-/* @media (min-width: 65rem) {
-    .about-us-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
-
 
 .about-us-container > * {
     padding: 1rem 0;
 }
-.about-us-link > a,
-.newsroom-link > a,
-.global-citizenship-link > a {
+
+ .about-us-link > a,
+ .newsroom-link > a,
+ .global-citizenship-link > a {
     color: black;
+ }
+
+ .app-sign-up {
+    padding: 2rem;
+    background-color: rgb(247, 247, 247);
+ }
+@media (min-width: 50rem) {
+ .app-sign-up > * {
+    max-width: 1280px;
+    padding-inline: 5rem;
+    margin: 0 auto;
+ }
+ .app-sign-up {
+    padding: 5rem 2rem;
+ }
+
+ .app-sign-up h2 {
+   margin-bottom: 2rem;
+ }
+}
+
+@media (min-width: 50rem) {
+    .apps-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 0.5fr));
+        
+    } 
+}
+
+
+.app-sign-up > h2 {
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+.driver-app-img > img,
+.uber-app-img > img {
+  width: 80px;
+}
+
+ @media (min-width: 32rem) {
+    .driver-app-img > img,
+    .uber-app-img > img {
+     width: 110px;
+   }
+} 
+
+.driver-app,
+.uber-app {
+    gap: 0rem;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 0.8rem 0.8rem;
+    justify-content: space-around;
+    border: 1px solid rgba(201, 198, 198, 0.719);
+}
+
+
+
+.driver-app-title,
+.uber-app-title {
+    justify-self: center;
+    font-size: 1.2rem;
 }
 
