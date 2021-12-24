@@ -40,7 +40,7 @@ let mobileHamburgerMenu = document.querySelector('.mobile-menu');
 // 1. Create a condition that targets viewports at least 768px wide
 
 const mediaQuery = window.matchMedia('(max-width: 50rem)');
-const mediaQueryWarapper = window.matchMedia('(min-width: 50rem)');
+
 
 function handleTabletChange(e) {
   // Check if the media query is true
@@ -107,16 +107,7 @@ function closeTheWarningMessage() {
 }
 
 
-function WrapperChangeBG(e) {
-    // Check if the media query is true
-    if (e.matches) {
-      // Show the hamburger menu
-     console.log('check')
-    } else //Hide the hamburger menu {
-      console.log('not checked')
-    }
-    mediaQueryWarapper.addListener(WrapperChangeBG);
-    WrapperChangeBG(mediaQueryWarapper);
+
 
 //The drive, eat and ride taps
 
@@ -161,13 +152,7 @@ function highlightDrive() {
     document.querySelector('.drive-image').style.display = '';
     document.querySelector('.eat-image').style.display = 'none';
     document.querySelector('.ride-image').style.display = 'none';
-    if(window.innerWidth > 800) {
-        wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/drive-desktop.jpeg)';
-    }else {
-        wrapperBackgroundPic.style.backgroundImage = '';
-        wrapperBackgroundPic.style.backgroundColor = 'white';
-    }
-    
+
 }
 
 eat.addEventListener('click', highlightEat);
@@ -182,13 +167,6 @@ function highlightEat() {
     document.querySelector('.drive-image').style.display = 'none';
     document.querySelector('.eat-image').style.display = '';
     document.querySelector('.ride-image').style.display = 'none';
-    if(window.innerWidth > 800) {
-        wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/eat-desktop.jpeg)';
-    } else {
-        wrapperBackgroundPic.style.backgroundImage = '';
-        wrapperBackgroundPic.style.backgroundColor = 'white';
-    }
-    
 }
 
 ride.addEventListener('click', highlightRide);
@@ -203,13 +181,6 @@ function highlightRide() {
     document.querySelector('.drive-image').style.display = 'none';
     document.querySelector('.eat-image').style.display = 'none';
     document.querySelector('.ride-image').style.display = '';
-  
-    if(window.innerWidth > 800) {
-        wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/ride-desktop.jpeg)';
-    } else {
-        wrapperBackgroundPic.style.backgroundImage = '';
-        wrapperBackgroundPic.style.backgroundColor = 'white';
-    }
 }
 
 

@@ -364,11 +364,11 @@ select {
         background-repeat: no-repeat;
         background-size: cover;
         height: 80vh;
-        padding: 5rem;
+        padding: 1.2rem;
     }
     
     .drive-eat-ride-container {
-    max-width: 55%;
+    max-width: 58%;
     height: 100%;
     background-color: white;
     
@@ -475,5 +475,95 @@ select {
 @media (min-width: 50rem) {
     .drive-eat-ride-mobile-pics {
         display: none;
+    }
+}
+
+
+.uber_business {
+    background-image: url(https://www.uber-assets.com/image/upload/v1613522699/assets/28/5b0222-7869-4658-b2ca-80a3890a2b69/original/DotCom_Update_U4B_bg_ipad.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0.9rem 2rem;
+}
+@media (min-width: 50rem) {
+    .uber_business {
+        padding: 3rem 2rem;
+    }
+}
+
+.business-title {
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.business-p {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+.business-btn {
+    padding: 1rem 0;
+}
+.business-btn > button {
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 0.6rem 1.7rem;
+}
+
+
+.safety-container  {
+    gap: 2rem;
+}
+
+.our-commitment {
+    width: 100%;
+}
+
+.safety-section {
+    padding: 2rem;
+}
+
+.safety-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 1.8rem;
+}
+
+.our-commitment > p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.safety-links > a,
+.our_setting-link >  a {
+    color: black;
+}
+.safety-links {
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media (min-width: 35rem) {
+    .safety-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .our-commitment > p {
+        width: 70%;
+    }
+   
+}
+
+
+@media (min-width: 50rem) {
+
+    .safety-section {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .safety-links {
+        flex-direction: column;
     }
 }
