@@ -231,7 +231,7 @@ select {
     right: -122%;
     top: 215%;
     background-color: white;
-    height: 92vh;
+    height: 99vh;
     width: 100vw;
     font-size: 1.6rem;
     z-index: 1;
@@ -671,3 +671,57 @@ select {
     font-size: 1.2rem;
 }
 
+@media (max-width: 380px)  {
+    .driver-app-title,
+    .uber-app-title {
+        padding: 0 0.3rem;
+        font-size: 0.8rem;
+    }
+}
+
+.sign-up-drive-ride {
+    gap: 2rem;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    
+}
+
+@media (min-width: 50rem) {
+    .sign-up-drive-ride {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+
+.sign-up-drive,
+.sign-up-ride {
+    margin: 0 auto;
+    padding: 2rem 0;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+    border-bottom: 1px solid black;
+    gap: 1.2rem;
+    width: 100%;
+    text-align: left;
+    justify-content: space-between;
+
+}
+
+
+
+.sign-up-drive > *,
+.sign-up-ride > * {
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+@media (min-width: 50rem) {
+    .sign-up-drive > *,
+.sign-up-ride > * {
+    padding: 0 1rem;
+    font-size: 2.5rem;
+}
+
+}
