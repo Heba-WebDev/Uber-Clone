@@ -520,6 +520,7 @@ select {
     width: 100%;
 }
 
+
 .safety-section {
     padding: 2rem;
 }
@@ -549,21 +550,29 @@ select {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-    .our-commitment > p {
+    .our-commitment > p, .our_setting > p {
         width: 70%;
     }
-   
+     .safety-links {
+        flex-direction: column;
+    }
+    
 }
 
+.our_setting > * {
+    padding-bottom: 1rem;
+}
 
+.our_setting > p {
+    padding-top: 0.3rem;
+    padding-bottom: 1.5rem;
+}
 @media (min-width: 50rem) {
 
     .safety-section {
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
     }
 
-    .safety-links {
-        flex-direction: column;
-    }
 }
+
