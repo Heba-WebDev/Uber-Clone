@@ -576,3 +576,35 @@ select {
 
 }
 
+.about-us-container {
+    padding: 1rem 2rem;
+}
+
+@media (min-width: 35rem) {
+    .about-us-container {
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+}
+
+@media (min-width: 50rem) {
+    .about-us-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 75%;
+        margin: 0 auto;
+    }
+    .about-us > p,
+    .newsroom > p,
+    .global-citizenship > p {
+        width: 90%;
+    }
+}
+.about-us-container > * {
+    padding: 1rem 0;
+}
+.about-us-link > a,
+.newsroom-link > a,
+.global-citizenship-link > a {
+    color: black;
+}
+
