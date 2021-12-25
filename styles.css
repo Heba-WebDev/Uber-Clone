@@ -378,6 +378,7 @@ select {
 
 
 
+
 .drive-eat-ride-headers {
     padding: 1rem 2rem;
     gap: 4rem;
@@ -724,4 +725,51 @@ select {
     font-size: 2.5rem;
 }
 
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.footer-container {
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+    gap: 3rem;
+}
+
+
+
+.footer-lists {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+
+
+.footer-list > span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.footer-list > ul {
+    display: grid;
+    align-items: flex-start;
+    padding: 0%;
+}
+.footer-list > ul > li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+.social-media-logos {
+    gap: 3rem;
+}
+
+@media (min-width: 50rem) {
+    .social-media-logos {
+        gap: 1.5rem;
+    }
 }

@@ -134,6 +134,10 @@ document.querySelector('.ride-image').style.display = 'none';
 
 let wrapperBackgroundPic = document.querySelector('.drive-eat-ride-wrapper');
 
+//The div child of the wrapper than holds the drive, eat and ride sections
+
+let driveEatRideWrapper = document.querySelector('.drive-eat-ride-container');
+
 
 //When clicked on each section, it will have a black bottom border under it's tap
 //And the section corresponding to the tap will show
@@ -152,11 +156,9 @@ function highlightDrive() {
     document.querySelector('.drive-image').style.display = '';
     document.querySelector('.eat-image').style.display = 'none';
     document.querySelector('.ride-image').style.display = 'none';
-  if(window.innerWidth > 800) {
     wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/drive-desktop.jpeg';
-  } else {
-    wrapperBackgroundPic.style.backgroundImage = '';
-  }
+    driveEatRideWrapper.style.backgroundColor = 'white';
+    driveEatRideWrapper.style.zIndex = '2';
 }
 
 eat.addEventListener('click', highlightEat);
@@ -171,11 +173,9 @@ function highlightEat() {
     document.querySelector('.drive-image').style.display = 'none';
     document.querySelector('.eat-image').style.display = '';
     document.querySelector('.ride-image').style.display = 'none';
-    if(window.innerWidth > 800) {
-        wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/eat-desktop.jpeg';
-      } else {
-        wrapperBackgroundPic.style.backgroundImage = '';
-      }
+    wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/eat-desktop.jpeg';
+    driveEatRideWrapper.style.backgroundColor = 'white';
+    driveEatRideWrapper.style.zIndex = '2';
 }
 
 ride.addEventListener('click', highlightRide);
@@ -190,11 +190,9 @@ function highlightRide() {
     document.querySelector('.drive-image').style.display = 'none';
     document.querySelector('.eat-image').style.display = 'none';
     document.querySelector('.ride-image').style.display = '';
-    if(window.innerWidth > 800) {
-        wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/ride-desktop.jpeg';
-      } else {
-        wrapperBackgroundPic.style.backgroundImage = '';
-      }
+    wrapperBackgroundPic.style.backgroundImage = 'url(/Uber-Clone/ride-desktop.jpeg';
+    driveEatRideWrapper.style.backgroundColor = 'white';
+    driveEatRideWrapper.style.zIndex = '2';
 }
 
 
