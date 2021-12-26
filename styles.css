@@ -376,7 +376,18 @@ select {
 
 }
 
-
+@media (min-width: 110rem) {
+    .drive-eat-ride-wrapper {
+       
+        height: 98vh;
+        padding: 1.2rem;
+    }
+    .drive-eat-ride-container {
+       
+        width: 50%;
+        height: 100%;
+    }
+}
 
 
 .drive-eat-ride-headers {
@@ -742,7 +753,11 @@ select {
     gap: 3rem;
 }
 
-
+@media (min-width: 50rem) {
+    .footer-container {
+        padding: 2.5rem 5rem;
+    }
+}
 
 .footer-lists {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -765,7 +780,7 @@ select {
 }
 
 .social-media-logos {
-    gap: 3rem;
+    gap: 2rem;
 }
 
 @media (min-width: 50rem) {
@@ -773,3 +788,81 @@ select {
         gap: 1.5rem;
     }
 }
+.social-media-lang-footer {
+    gap: 1.8rem;
+}
+
+.footer-lang > * {
+ align-self: center;
+}
+
+.footer-lang-location  {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.footer-trade-terms {
+    color: grey;
+    gap: 2.4rem;
+}
+
+.footer-terms {
+    font-size: 0.8rem;
+    gap: 2rem;
+}
+
+.footer-apps {
+    gap: 0.3rem;
+    align-items: center;
+}
+
+
+.google-play {
+    width: 40%;
+}
+
+.apple-store {
+    width: 37%;
+}
+
+
+@media (min-width: 60rem) {
+    .footer-social-media {
+        gap: 10rem;
+    }
+    .footer-social-media,
+    .social-media-lang-footer  {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+   
+    .footer-apps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: end;
+        gap: 2rem;
+    }
+    .footer-apps > * {
+     justify-self: end;
+    }
+    
+
+    .social-media-lang-footer  > * {
+        align-self: center;
+    }
+
+    .footer-lang-location {
+        flex-direction: row;
+        align-items: center;
+    }
+    .google-play {
+        width: 100%;
+    }
+    
+    .apple-store {
+        width: 95%;
+    }
+}
+
+
