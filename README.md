@@ -10,7 +10,7 @@ This is a clone of the offcial Uber website. Disclaimer: this is a project for l
 commercial usage nor to gain personal benefits. This is my very first clone project, I didn not follow any tutorial, it's
 100% a personal project done by me.
 
-(Uber-Clone/preview.png)
+(/UberClone/Uber-Clone/preview.png)
 
 	
 ## Teck stack
