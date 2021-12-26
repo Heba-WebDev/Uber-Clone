@@ -27,14 +27,14 @@ One of the challenges I faced was the navbar. I've never done a navbar with a dr
 was positioned relatively and the drop list was positioned absolutely. Once the container is clicked on, the drop list will
 show right below the navbar.
 
-(Uber-Clone/challenge1.png)
+![First challenge](https://github.com/Heba-WebDev/Uber-Clone/blob/main/challenge1.png?raw=true)
+
 
 Another challenges I faced was first section of the landing page, where clicking on each Uber service, changes the background image
 of the wrapper container in the big screen. I solved this problem by changing the link in Javascript once a service tap is clicked 
 upon but also to made the inner div has an index of 2, so it will always stay on top and not inherit the background image of the div parent.
 
-
-(Uber-Clone/challenge2.png)
+![Second challenge](https://github.com/Heba-WebDev/Uber-Clone/blob/main/challenge2.png?raw=true)
 
 
 ## Live demo: https://heba-webdev.github.io/Uber-Clone/index
