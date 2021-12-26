@@ -10,7 +10,7 @@ This is a clone of the offcial Uber website. Disclaimer: this is a project for l
 commercial usage nor to gain personal benefits. This is my very first clone project, I didn not follow any tutorial, it's
 100% a personal project done by me.
 
-![alt text] (https://github.com/Heba-WebDev/Uber-Clone/blob/main/challenge1.png?raw=true)
+![Preview](https://github.com/Heba-WebDev/Uber-Clone/blob/main/challenge1.png?raw=true)
 
 	
 ## Teck stack
