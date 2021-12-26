@@ -10,7 +10,7 @@ This is a clone of the offcial Uber website. Disclaimer: this is a project for l
 commercial usage nor to gain personal benefits. This is my very first clone project, I didn not follow any tutorial, it's
 100% a personal project done by me.
 
-(./Uber-Clone/preview.png)
+https://github.com/Heba-WebDev/Uber-Clone/blob/main/challenge1.png
 
 	
 ## Teck stack
@@ -37,4 +37,4 @@ upon but also to made the inner div has an index of 2, so it will always stay on
 (Uber-Clone/challenge2.png)
 
 
-## Live demo: /*soon*/
+## Live demo: https://heba-webdev.github.io/Uber-Clone/index
